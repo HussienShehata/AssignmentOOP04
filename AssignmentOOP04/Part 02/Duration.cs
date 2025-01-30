@@ -188,15 +188,16 @@ namespace AssignmentOOP04.Part_02
 
             if (x.Hours == y.Hours)
                 return x.Minutes > y.Minutes;
+            else if (x.Hours == y.Hours && x.Minutes == y.Minutes)
+                return x.Seconds > y.Seconds;
+            else if (x.Hours == y.Hours && x.Minutes == y.Minutes && x.Seconds > y.Seconds)
+                return x.Seconds > y.Seconds;
             else 
                 return x.Hours > y.Hours;
-            //else if( x.Hours== y.Hours && x.Minutes == y.Minutes  )
-            //    return x.Seconds > y.Seconds;
-            //else if(x.Hours == y.Hours && x.Minutes == y.Minutes && x.Seconds > y.Seconds)
-            //    return x.Seconds > y.Seconds;
-
+            
+      
         }
-
+        
 
 
         public static bool operator < (Duration x, Duration y)
@@ -205,11 +206,11 @@ namespace AssignmentOOP04.Part_02
 
             if(x.Hours == y.Hours)
                 return x.Minutes < y.Minutes;
+            else if (x.Hours == y.Hours && x.Minutes == y.Minutes)
+                return x.Seconds < y.Seconds;
+
             else return x.Hours< y.Hours;
-            //else if (x.Hours == y.Hours && x.Minutes == y.Minutes)
-            //    return x.Seconds < y.Seconds;
-            //else if (x.Hours == y.Hours && x.Minutes == y.Minutes && x.Seconds < y.Seconds)
-            //    return x.Seconds < y.Seconds;
+          
 
         }
 

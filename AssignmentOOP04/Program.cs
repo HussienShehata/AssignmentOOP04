@@ -141,9 +141,13 @@ namespace AssignmentOOP04
 
             //if (D4 > D5)
             //    Console.WriteLine("D4 is larger");
+            //else
+            //    Console.WriteLine("D4 is smaller");
+            
 
-            DateTime dateTime = (DateTime)D4;
-            Console.WriteLine(dateTime);
+            //DateTime dateTime = (DateTime)D4;
+            //Console.WriteLine(dateTime);
+
             #endregion
 
         }
